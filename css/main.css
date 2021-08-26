@@ -83,6 +83,7 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
+  color: #e2e3ed;
   font-size: 1em;
   text-align: left;
 }
@@ -91,8 +92,7 @@ ul,
 ol {
   list-style-type: none;
   text-transform: uppercase;
-  color: #fff;
-  font-weight: bold;
+
 }
 a {
   color: #e2e3ed;
@@ -115,7 +115,9 @@ p {
   line-height: 1.285;
 }
 img {
+  width: 100%;
 }
+
 figure {
 }
 address {
@@ -150,6 +152,8 @@ header .content-wrapper {
   height: 1px;
   margin: 10px 0 20px 0;
 }
+
+
 header nav {
   display: flex;
   justify-content: space-around;
@@ -161,6 +165,15 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+header figure {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 footer {
   flex-direction: column;
@@ -196,13 +209,27 @@ footer .contact {
 footer .copyright {
   margin: 20px 0;
 }
-
+figure {
+  margin: 0;
+}
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
+  background: url("/img/unplugged-retreat.jpg") #333;
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
 }
+.hero-area h1{
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 aside {
   display: flex;
   justify-content: center;
@@ -211,10 +238,17 @@ aside {
   background-color: #597c71;
 }
 .features {
+  background: url("/img/unplugged-retreat-features.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
+}
+
+.features h2 {
+  margin-bottom: 60px;
 }
 .features .feature-items {
   display: flex;
@@ -225,9 +259,11 @@ aside {
 
 .features p {
   margin: 0;
+  color: #fff;
 }
 .features h2 {
   margin-bottom: 60px;
+  color: #fff;
 }
 
 .mission {
@@ -266,7 +302,7 @@ aside {
 }
 .reviews {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-flow: row wrap;
   background-color: #2a423a;
 }
@@ -279,8 +315,9 @@ aside {
   margin: 20px 0;
   color: #fff;
 }
+
 .reviews p {
-  color:#fff;
+  color: #fff;
 }
 
 .content-wrapper {
@@ -292,7 +329,7 @@ aside {
   margin: 30px 0;
 }
 
-.reviews h3 {
+article img {
   width: 60%;
 }
 
@@ -386,19 +423,19 @@ aside {
 aside .form {
   margin-top: 30px;
 }
-input[type=text] {
+input[type="text"] {
   box-sizing: border-box;
   width: 100%;
   color: #2a423a;
   font-style: italic;
   padding: 1em;
 }
-input[type=button] {
+input[type="button"] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
   background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 1.125em;
   color: #e2e3ed;
