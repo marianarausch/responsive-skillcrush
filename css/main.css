@@ -90,6 +90,9 @@ body {
 ul,
 ol {
   list-style-type: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
 }
 a {
   color: #e2e3ed;
@@ -129,6 +132,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #000;
 }
 header {
   padding: 15px 0;
@@ -163,12 +167,18 @@ footer {
 }
 footer p {
   margin: 0;
+  color: #fff;
 }
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
+footer h4 {
+  color: #fff;
+}
+
 footer .social-icons p {
   display: flex;
   justify-content: center;
@@ -198,6 +208,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #597c71;
 }
 .features {
   display: flex;
@@ -218,6 +229,7 @@ aside {
 .features h2 {
   margin-bottom: 60px;
 }
+
 .mission {
   display: flex;
   justify-content: center;
@@ -253,14 +265,22 @@ aside {
   margin-bottom: 50px;
 }
 .reviews {
+  display: flex;
+  justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 .reviews h2 {
   margin-bottom: 40px;
+  color: #fff;
 }
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
+  color: #fff;
+}
+.reviews p {
+  color:#fff;
 }
 
 .content-wrapper {
@@ -363,7 +383,29 @@ aside {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+aside .form {
+  margin-top: 30px;
+}
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
   .content-wrapper {
