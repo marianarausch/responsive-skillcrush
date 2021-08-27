@@ -373,6 +373,10 @@ input[type="button"] {
   .contact-content p {
     margin: 0;
   }
+  .mission {
+    background-color:#2a423a;
+  }
+
   /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -557,6 +561,7 @@ article img {
 
   header figure {
     width: 30%;
+    padding-left: 50px;
   }
 
   .header-divider {
